@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+    <title>XML Fundamentals</title>
+    <author>Jane Doe</author>
+    <publisher>Tech Books Publishing</publisher>
+    <year>2021</year>
+    <price>$29.99</price>
+    <description>This book provides a comprehensive introduction to XML, covering its syntax, structure, and applications in various domains.</description>
+
+</book>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Site Layout using Grid</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .container {
+            display: grid;
+
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 60px 60px 100px 60px;
+
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "main sidebar"
+                "footer footer";
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #789b84;
+
+            display: grid;
+            place-items: center;
+
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: #f2f2f2;
+
+            display: flex;
+            align-items: center;
+
+            padding-left: 15px;
+            font-size: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            padding: 20px 15px;
+            font-size: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #f2f2f2;
+
+            display: flex;
+            align-items: center;
+
+            padding-left: 15px;
+            font-size: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #45424d;
+
+            display: grid;
+            place-items: center;
+
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Complete Site Layout using Grid</h1>
+
+    <div class="container">
+
+        <div class="header">
+            My Website
+        </div>
+
+        <div class="nav">
+            Home | About | Contact
+        </div>
+
+        <div class="main">
+            Main Content Area
+        </div>
+
+        <div class="sidebar">
+            Sidebar Content
+        </div>
+
+        <div class="footer">
+            &#169; 2025
+        </div>
+
+    </div>
+
+</body>
+</html>

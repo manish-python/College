@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student roll="101">
+    <name>John</name>
+    <branch>Computer Science</branch>
+       <section>A</section>
+</student>
+
